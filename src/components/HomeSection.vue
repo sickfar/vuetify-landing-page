@@ -5,11 +5,9 @@
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="6" xl="8">
-              <h1 class="display-2 font-weight-bold mb-4">Vuetify.js</h1>
+              <h1 class="display-2 font-weight-bold mb-4">FixyTech</h1>
               <h1 class="font-weight-light">
-                Lorem ipsum dolor sit amet consectetur <br />
-                adipisicing elit. Maiores porro voluptatibus <br />
-                delectus nam optio harum!
+              Soluciones Tecnologicas
               </h1>
               <v-btn
                 rounded
@@ -19,51 +17,10 @@
                 @click="$vuetify.goTo('#features')"
                 class="mt-5"
               >
-                Saiba mais
+                Ver mas
                 <v-icon class="ml-2">mdi-arrow-down</v-icon>
               </v-btn>
-              <div class="video d-flex align-center py-4">
-                <a @click.stop="dialog = true" class="playBut">
-                  <svg
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-                    x="0px"
-                    y="0px"
-                    width="60px"
-                    height="60px"
-                    viewBox="0 0 213.7 213.7"
-                    enable-background="new 0 0 213.7 213.7"
-                    xml:space="preserve"
-                  >
-                    <polygon
-                      class="triangle"
-                      id="XMLID_18_"
-                      fill="none"
-                      stroke-width="7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-miterlimit="10"
-                      points="73.5,62.5 148.5,105.8 73.5,149.1 "
-                    />
 
-                    <circle
-                      class="circle"
-                      id="XMLID_17_"
-                      fill="none"
-                      stroke-width="7"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-miterlimit="10"
-                      cx="106.8"
-                      cy="106.8"
-                      r="103.3"
-                    />
-                  </svg>
-                </a>
-                <p class="subheading ml-2 mb-0">Assista o vídeo</p>
-              </div>
             </v-col>
             <v-col cols="12" md="6" xl="4" class="hidden-sm-and-down"> </v-col>
           </v-row>
@@ -99,12 +56,13 @@
                 >
                   <v-img
                     :src="feature.img"
-                    max-width="100px"
+                    max-width="200px"
+                    height="200px"
                     class="d-block ml-auto mr-auto"
                     :class="{ 'zoom-efect': hover }"
                   ></v-img>
                   <h1 class="font-weight-regular">{{ feature.title }}</h1>
-                  <h4 class="font-weight-regular subtitle-1">
+                  <h4 class="font-weight-regular subtitle-2">
                     {{ feature.text }}
                   </h4>
                 </v-card>
@@ -138,18 +96,18 @@ export default {
       features: [
         {
           img: require("@/assets/img/icon2.png"),
-          title: "Design Limpo",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          title: "Desarrollo de Apps",
+          text: "Creamos tu aplicacion web o movil desde cero, usamos tecnologias de punta para crear una aplicacion que cumpla con tus expectativas.",
         },
         {
           img: require("@/assets/img/icon1.png"),
-          title: "Dados Seguros",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          title: "Integraciones",
+          text: "Vinculamos software de terceros con tu aplicación, para que puedan interactuar entre si, logrando procesos automáticos.",
         },
         {
           img: require("@/assets/img/icon3.png"),
-          title: "Código Aberto",
-          text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+          title: "Consultoria",
+          text: "Asesoramiento en el desarrollo de soluciones digitales que ofrezcan mejoras en base a las necesidades de tu negocio.",
         },
       ],
     };

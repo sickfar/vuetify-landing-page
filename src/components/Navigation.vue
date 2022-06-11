@@ -13,7 +13,7 @@
             <img src="@/assets/img/logo.png" alt="Logo" />
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title class="title">Calango</v-list-item-title>
+            <v-list-item-title class="title">FixyTech</v-list-item-title>
             <v-list-item-subtitle>WEB</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
@@ -26,15 +26,15 @@
           v-for="([icon, text, link], i) in items"
           :key="i"
           link
-          @click="$vuetify.goTo(link)"
+          @click="text != 'Contáctenos' ? $vuetify.goTo(link) : ''"
+          :href="text == 'Contáctenos' ? 'https://t.me/FixyTech' : ''"
+          :target="text == 'Contáctenos' ? '_blank' : ''"
         >
           <v-list-item-icon class="justify-center">
             <v-icon>{{ icon }}</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-            <v-list-item-title class="subtitile-1">{{
-              text
-            }}</v-list-item-title>
+            <v-list-item-title class="subtitile-1">{{ text }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -45,7 +45,7 @@
       :color="color"
       :flat="flat"
       dark
-      class="px-15"
+      class=""
       :class="{ expand: flat }"
     >
       <v-toolbar-title>
@@ -59,19 +59,18 @@
       />
       <div v-else>
         <v-btn text @click="$vuetify.goTo('#hero')">
-          <span class="mr-2">Home</span>
+          <span class="mr-2">Inicio</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#features')">
-          <span class="mr-2">Sobre</span>
+          <span class="mr-2">Servicios</span>
         </v-btn>
         <v-btn text @click="$vuetify.goTo('#download')">
-          <span class="mr-2">Download</span>
+          <span class="mr-2">¿Por qué elegirnos?</span>
         </v-btn>
-        <v-btn text @click="$vuetify.goTo('#pricing')">
-          <span class="mr-2">Preços</span>
-        </v-btn>
-        <v-btn rounded outlined text @click="$vuetify.goTo('#contact')">
-          <span class="mr-2">Contate-nos</span>
+        <v-btn rounded outlined text href="https://t.me/FixyTech" target="_blank">
+           <v-icon class="mr-2"> fa-brands fa-telegram </v-icon>
+           
+          <span class="mr-2">Contatenos</span>
         </v-btn>
       </div>
     </v-app-bar>
@@ -95,11 +94,11 @@ export default {
     drawer: null,
     isXs: false,
     items: [
-      ["mdi-home-outline", "Home", "#hero"],
-      ["mdi-information-outline", "Sobre", "#features"],
-      ["mdi-download-box-outline", "Download", "#download"],
-      ["mdi-currency-usd", "Preços", "#pricing"],
-      ["mdi-email-outline", "Contatos", "#contact"],
+      ["mdi-home-outline", "Inicio", "#hero"],
+      ["mdi-coffee", "Servicios", "#features"],
+      ["mdi-help-circle", "¿Por qué elegirnos?", "#download"],
+      ["fa-brands fa-telegram", "Contáctenos", "https://t.me/FixyTech"],
+
     ],
   }),
   props: {
