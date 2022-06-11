@@ -5,8 +5,6 @@
       <home />
       <about />
       <download />
-      <pricing />
-      <contact />
     </v-main>
     <v-scale-transition>
       <v-btn
@@ -42,8 +40,7 @@ import foote from "./components/Footer";
 import home from "./components/HomeSection";
 import about from "./components/AboutSection";
 import download from "./components/DownloadSection";
-import pricing from "./components/PricingSection";
-import contact from "./components/ContactSection";
+
 
 export default {
   name: "App",
@@ -54,8 +51,6 @@ export default {
     home,
     about,
     download,
-    pricing,
-    contact,
   },
 
   data: () => ({

@@ -5,9 +5,9 @@
         <v-col cols="10">
           <v-row align="center" justify="center">
             <v-col cols="12" md="7">
-              <h1 class="font-weight-light display-2">Sobre</h1>
+              <h1 class="font-weight-light display-2"></h1>
               <h1 class="font-weight-light display-1 mb-3">
-                Lorem ipsum dolor!
+               ¿Porque utilizar un software de gestión?
               </h1>
               <v-row>
                 <v-col cols="12" class="d-flex align-center">
@@ -17,9 +17,8 @@
                     class="mr-4"
                   />
                   <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Como no podía ser de otra manera, una de las consecuencias más evidentes es la reducción de costes. 
+                    Por tener un mayor y mejor control sobre los procesos es posible eliminar costes de procesos defectuosos. 
                   </p>
                 </v-col>
                 <v-col cols="12" class="d-flex align-center">
@@ -29,9 +28,8 @@
                     class="mr-4"
                   />
                   <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Otro de los aspectos más notables en cuanto a las ventajas de un software de gestión 
+                    es que optimiza el manejo de información, para automatizar procesos y aumentar la productividad. 
                   </p>
                 </v-col>
                 <v-col cols="12" class="d-flex align-center">
@@ -40,10 +38,11 @@
                     max-width="60px"
                     class="mr-4"
                   />
+                
                   <p class="text-justify">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    
+                  Podremos obtener información muy valiosa acerca de su funcionamiento, errores y puntos a optimizar. 
+                  Es, por lo tanto, una herramienta que nos permite introducir la mejora continua en cada uno de los procesos.
                   </p>
                 </v-col>
               </v-row>
